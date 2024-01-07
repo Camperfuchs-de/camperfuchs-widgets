@@ -7,8 +7,9 @@
         <script src="https://cdn.tailwindcss.com"></script>
         <script>
             tailwind.config = {
+                important: true,
                 theme: {
-                    extend: {   
+                    extend: {
                         colors: {
                             clifford: '#da373d',
                         }
@@ -21,19 +22,64 @@
         <script src="https://camperfuchs-de.github.io/camperfuchs-widgets/image-slider/image-slider.js" type="module"></script>
         <link rel="stylesheet" href="https://camperfuchs-de.github.io/camperfuchs-widgets/image-slider/style.css">
         <title>Demo Booking Calendar</title>
+        <style>
+            pre {
+                white-space: pre-wrap !important;
+                /* css-3 */
+                white-space: -moz-pre-wrap !important;
+                /* Mozilla, since 1999 */
+                white-space: -pre-wrap !important;
+                /* Opera 4-6 */
+                white-space: -o-pre-wrap !important;
+                /* Opera 7 */
+                word-wrap: break-word !important;
+                /* Internet Explorer 5.5+ */
+            }
+
+            code {
+                white-space: pre-wrap !important;
+                /* css-3 */
+                white-space: -moz-pre-wrap !important;
+                /* Mozilla, since 1999 */
+                white-space: -pre-wrap !important;
+                /* Opera 4-6 */
+                white-space: -o-pre-wrap !important;
+                /* Opera 7 */
+                word-wrap: break-word !important;
+                /* Internet Explorer 5.5+ */
+            }
+        </style>
+        <link rel="stylesheet" href="prism.css">
     </head>
 
     <body>
-        <div class="flex flex-col w-full gap-4 p-4">
-            <div class="grid sm:grid-cols-2 gap-4">
-                <div class="flex justify-start items-center h-full">
-                    <image-slider vehicle-id="9QILDMKU"></image-slider>
-                </div>
-                <div class="flex justify-center">
-                    <booking-calendar vehicle-id="9QILDMKU"></booking-calendar>
-                </div>
+        <div class="flex min-h-screen items-center flex-col w-full gap-4 p-4 bg-gray-100 text-center text-gray-700">
+            <div class="flex flex-col gap-2 items-center h-full p-4 bg-white rounded-xl shadow-xl">
+                <h1 class="text-2xl font-bold">Camperfuchs Viehile Images Widgets</h1>
+                <image-slider vehicle-id="9QILDMKU"></image-slider>
+                <hr class="border border-solid border-gray-700 w-full">
+                <p class="text-lg font-medium">Widget HTML snippet:</p>
+                <pre><code class="language-html">&lt;image-slider vehicle-id="your_vehicle_id"&gt;&lt;/image-slider&gt;</code></pre>
+                <p class="text-lg font-medium">Widget Script tag:</p>
+                <pre><code class="language-html overflow-x-scroll">&lt;script src="https://camperfuchs-de.github.io/camperfuchs-widgets/booking-calendar/booking-calendar.js" type="module"&gt;&lt;/script&gt;</code></pre>
+                <p class="text-lg font-medium">Widget Link tag:</p>
+                <pre><code class="language-html overflow-x-scroll">&lt;link rel="stylesheet" href="https://camperfuchs-de.github.io/camperfuchs-widgets/booking-calendar/style.css"&gt;</code></pre>
+                <hr class="border border-solid border-gray-700 w-full">
+            </div>
+            <div class="flex flex-col w-full gap-2 items-center h-full p-4 bg-white rounded-xl shadow-xl">
+                <h1 class="text-2xl font-bold">Camperfuchs Booking Calendar Widgets</h1>
+                <booking-calendar vehicle-id="9QILDMKU"></booking-calendar>
+                <hr class="border border-solid border-gray-700 w-full">
+                <p class="text-lg font-medium">Widget HTML snippet:</p>
+                <pre><code class="language-html">&lt;booking-calendar vehicle-id="your_vehicle_id"&gt;&lt;/booking-calendar&gt;</code></pre>
+                <p class="text-lg font-medium">Widget Script tag:</p>
+                <pre><code class="language-html overflow-x-scroll">&lt;script src="https://camperfuchs-de.github.io/camperfuchs-widgets/booking-calendar/booking-calendar.js" type="module"&gt;&lt;/script&gt;</code></pre>
+                <p class="text-lg font-medium">Widget Link tag:</p>
+                <pre><code class="language-html overflow-x-scroll">&lt;link rel="stylesheet" href="https://camperfuchs-de.github.io/camperfuchs-widgets/booking-calendar/style.css"&gt;</code></pre>
+                <hr class="border border-solid border-gray-700 w-full">
             </div>
         </div>
+        <script src="prism.js"></script>
     </body>
 
 </html>
