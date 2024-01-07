@@ -5,9 +5,6 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://cdn.tailwindcss.com"></script>
-        <script src="./booking-calendar/booking-calendar.js" type="module"></script>
-        <script src="./image-slider/image-slider.js" type="module"></script>
-        <script src="https://camperfuchs-de.github.io/camperfuchs-widgets/script.js" type="module"></script>
         <script>
             tailwind.config = {
                 theme: {
@@ -19,12 +16,14 @@
                 }
             }
         </script>
+        <script src="./booking-calendar/script.js"></script>
+        <script src="./image-slider/script.js"></script>
         <title>Demo Booking Calendar</title>
     </head>
 
     <body>
         <div class="flex flex-col w-full gap-4 p-4 bg-gray-500">
-            <div class="grid grid-cols-2 gap-4">
+            <div class="grid sm:grid-cols-2 gap-4">
                 <div class="flex justify-start items-center h-full">
                     <image-slider vehicle-id="9QILDMKU"></image-slider>
                 </div>
