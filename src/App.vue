@@ -37,7 +37,7 @@ document.head.appendChild(vehicle_details_link);
   <div class="drawer lg:drawer-open">
     <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
     <div class="drawer-content flex flex-col">
-      <div class="navbar sticky top-0 shadow-md items-center justify-between lg:hidden bg-base-100">
+      <div class="navbar sticky top-0 z-10 shadow-md items-center justify-between lg:hidden bg-base-100">
         <label for="my-drawer-2" class="btn btn-ghost font-bold text-3xl">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
@@ -47,11 +47,13 @@ document.head.appendChild(vehicle_details_link);
           CamperFuchs
         </RouterLink>
       </div>
-      <div class="flex flex-col gap-4 p-4 min-h-screen bg-white">
-        <RouterView />
+      <div class="flex flex-col items-center gap-4 p-4 min-h-screen bg-white">
+        <div class="grid container w-full">
+          <RouterView />
+        </div>
       </div>
     </div>
-    <div class="drawer-side">
+    <div class="drawer-side z-20">
       <label for="my-drawer-2" aria-label="close sidebar" class="drawer-overlay"></label>
       <ul class="menu menu-lg p-4 w-80 min-h-full bg-base-200 text-primary-braun">
         <li>
