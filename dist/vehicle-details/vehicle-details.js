@@ -7003,6 +7003,7 @@ function af(e, t, u, r, n, o) {
   }, 8, ["title", "open"])) : (F(), N("div", of, [
     p("span", sf, M(u.title), 1),
     p("div", {
+      style: { "word-break": "break-word" },
       innerHTML: r.md.render(u.text)
     }, null, 8, cf)
   ]));
