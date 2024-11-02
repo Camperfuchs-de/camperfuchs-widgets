@@ -7,4 +7,5 @@ npm run build &&
 cd ../camperfuchs-vehicle-details &&
 npm run build &&
 cd ../campersales-widget &&
-cd ../camperfuchs-widget
+cd ../camperfuchs-widget &&
+cp -r dist/ ../dist
