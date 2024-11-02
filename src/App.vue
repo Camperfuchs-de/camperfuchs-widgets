@@ -31,6 +31,14 @@ const vehicle_details_link = document.createElement('link');
 vehicle_details_link.rel = "stylesheet";
 vehicle_details_link.href = CONSTANTS.VEHICLE_DETAILS_STYLE;
 document.head.appendChild(vehicle_details_link);
+const vehicle_sale_script = document.createElement('script');
+vehicle_sale_script.src = CONSTANTS.VEHICLE_SALE_SCRIPT;
+vehicle_sale_script.type = "module";
+document.head.appendChild(vehicle_sale_script);
+const vehicle_sale_link = document.createElement('link');
+vehicle_sale_link.rel = "stylesheet";
+vehicle_sale_link.href = CONSTANTS.VEHICLE_SALE_STYLE;
+document.head.appendChild(vehicle_sale_link);
 </script>
 
 <template>
@@ -74,6 +82,11 @@ document.head.appendChild(vehicle_details_link);
         <li>
           <RouterLink to="/vehicle-details" :class="activeRoute('VehicleDetails')">
             Vehicle Details
+          </RouterLink>
+        </li>
+        <li>
+          <RouterLink to="/vehicle-sale" :class="activeRoute('VehicleSale')">
+            Vehicle Sale
           </RouterLink>
         </li>
       </ul>
