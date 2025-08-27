@@ -10,7 +10,7 @@ export const CONSTANTS = {
     VEHICLE_SALE_STYLE: "https://camperfuchs-de.github.io/camperfuchs-widgets/vehicle-sale/style.css"
 };
 
-const vehicleId = ref('ZJS534I0');
+const vehicleId = ref('ATWT0HLX');
 const setVehicleId = (id) => {
     vehicleId.value = id;
 };
